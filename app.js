@@ -19,7 +19,7 @@ let mainAudio = null;
 let specialAudio = null;
 
 function initAudioSystem() {
-  window.mainAudio = new Audio('./songs/1.m4a');
+  window.mainAudio = new Audio('./Songs/1.m4a');
   window.mainAudio.loop = true;
   window.mainAudio.volume = 0.5;
   
@@ -283,7 +283,7 @@ function initScrollingMemories() {
             
             // Initialize special audio if it doesn't exist
             if (!window.specialAudio) {
-              window.specialAudio = new Audio('./songs/2.m4a');
+              window.specialAudio = new Audio('./Songs/2.m4a');
               window.specialAudio.loop = false; // Only play once per trigger
               
               // When special song finishes, return to main song 1
