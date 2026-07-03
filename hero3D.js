@@ -71,7 +71,7 @@ function initHero3DRibbon() {
 
   // Animation Loop Variables
   let time = 0;
-  const duration = 100; // Seconds for full cycle (increased from 30 to slow it down)
+  const duration = 50// Seconds for full cycle (increased from 30 to slow it down)
   const speed = 1 / (duration * 60); // approx distance per frame
 
   function renderRibbon() {
