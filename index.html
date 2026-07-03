@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday Subii... — A Grand Celebration</title>
+  <meta name="description"
+    content="A premium interactive birthday celebration website filled with animated canvas fireworks, falling confetti, musical chimes, and beautiful memory reveals.">
+
+  <!-- Preload fonts and hero image -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@300;400;700;800&family=Playfair+Display:ital,wght@0,600;0,800;1,400&display=swap"
+    rel="stylesheet">
+  <link rel="preload" as="image" href="./assets/hero-bg.jpg">
+
+  <!-- Core Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+
+  <!-- Hero Section -->
+  <header id="hero" class="section-container">
+    <canvas id="particlesCanvas"></canvas>
+    <div id="heroRibbonContainer"></div>
+
+    <!-- Dark Vignette Overlay -->
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+      <p class="hero-tagline uppercase-tracking">A Special Celebration of You</p>
+      <h1 class="hero-title text-gradient">Happy Birthday</h1>
+      <div class="recipient-name-wrap">
+        <h1 class="hero-title text-gradient">Subi...</h1>
+      </div>
+      <p class="hero-subtext">Scroll down to embark on a beautiful journey of memories created just for you.</p>
+
+      <div class="scroll-indicator">
+        <span class="scroll-arrow"></span>
+        <span class="scroll-text">Scroll to Start</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content Wrapper -->
+  <main id="mainContent">
+    <canvas id="confettiCanvas"></canvas>
+
+    <!-- Intro / Quote Section -->
+    <section id="intro" class="section-container content-section">
+      <div class="grid-container">
+        <div class="quote-card glass-panel anim-reveal">
+          <div class="quote-decor">“</div>
+          <blockquote class="poetic-quote">
+            <p>Today, we celebrate the beautiful chapters of your life already written, and the countless blank pages
+              waiting for your unique touch. Every year is more than just a number—it is a collection of smiles you've
+              shared, challenges you've overcome, lessons you've embraced, and memories you've created along the way.
+            </p>
+
+            <p>May this birthday remind you of how truly special you are. May your heart always find peace, your dreams
+              always find the courage to grow, and your journey be filled with love, kindness, laughter, and
+              unforgettable moments. May every sunrise bring new hope, every challenge reveal your strength, and every
+              step lead you closer to the life you've always imagined.</p>
+
+            <p>Never forget that the light you carry has the power to brighten the lives of those around you. Continue
+              to believe in yourself, embrace every opportunity, and write a story that inspires not only you but
+              everyone fortunate enough to know you.</p>
+
+            <p>Here's to celebrating the person you are today, the memories that have shaped you, and the incredible
+              future waiting to unfold. May the chapters ahead be your most beautiful, meaningful, and unforgettable
+              ones yet.
+              <br>
+              Happy Birthday Subi....✨
+            </p>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- Scrolling Memories Section -->
+    <section id="scrollingMemories" class="section-container content-section">
+      <div class="section-header anim-reveal">
+        <h2 class="section-title text-gradient">Journey of Memories</h2>
+        <p class="section-subtitle">Scroll down to unfold the beautiful chapters of your friendship.</p>
+      </div>
+
+      <div id="memoryFeed" class="memory-feed">
+        <!-- Javascript will inject cards here -->
+      </div>
+
+      <!-- Friendship Quotes at the bottom -->
+      <div class="friendship-quotes-container anim-reveal">
+        <h3 class="quotes-title text-gradient">To Our Best Friend</h3>
+        <div class="quote-card glass-panel">
+          <p class="poetic-quote">Some people walk into our lives for a season,
+            but you became the chapter I never want to end.
+            Thank you for proving that the most beautiful relationships
+            are the ones built purely on trust, laughter, and endless memories.</p>
+        </div>
+        <div class="quote-card glass-panel" style="margin-top: 1.5rem;">
+          <p class="poetic-quote">Life will change, places will change, and years will quietly pass.
+            But I hope one thing never changes—our friendship.
+            Because some bonds aren't written by fate alone;
+            they're written by every smile, every conversation, and every moment we shared.</p>
+        </div>
+        <div class="quote-card glass-panel" style="margin-top: 1.5rem;">
+          <p class="poetic-quote">The greatest gift life gave me wasn't luck or success.
+            It was finding a friend who made ordinary days unforgettable.
+            No matter where tomorrow takes us,
+            you'll always have a special place in my happiest memories.</p>
+        </div>
+        <div class="quote-card glass-panel" style="margin-top: 1.5rem;">
+          <p class="poetic-quote">You never had to do anything extraordinary to become important.
+            Just being yourself made my world a little brighter every day.
+            That's what true friendship feels like—
+            a quiet comfort that never asks for anything in return.</p>
+
+        </div>
+        <div class="quote-card glass-panel" style="margin-top: 1.5rem;">
+          <p class="poetic-quote">One day we'll look back at these moments and smile.
+            Not because life was perfect, but because we had each other through it all.
+            Thank you for being the kind of friend
+            that turns simple memories into treasures for a lifetime.</p>
+
+        </div>
+      </div>
+    </section>
+
+
+  </main>
+
+  <!-- Page Footer -->
+  <footer class="page-footer">
+    <div class="footer-glow"></div>
+    <div class="footer-content">
+      <p class="footer-wishes text-gradient">As you step into another beautiful year of your life, I hope every kindness
+        you've ever shown to others finds its way back to you a hundredfold. You have one of those rare hearts that
+        chooses compassion before judgment, care before expectations, and happiness for others even when no one is
+        watching. Never let this world change the goodness within you, because people like you make life a little warmer
+        and a little brighter for everyone around them. May every dream you've quietly carried find the courage to
+        become reality, every challenge shape you into an even stronger person, and every new beginning lead you to
+        opportunities beyond your imagination. I hope your smile never loses its reason, your heart never loses its
+        hope, and your journey is always surrounded by genuine people who value you as much as you value them. Thank you
+        for being the kind of friend whose presence brings comfort, whose words bring strength, and whose memories
+        become treasures that time can never fade. On your birthday, I don't just wish you another wonderful year—I wish
+        you a lifetime filled with peace, good health, endless laughter, meaningful moments, unforgettable adventures,
+        and countless reasons to believe that the very best chapters of your story are still waiting to be written.
+        Happy Birthday, my dear friend. Stay exactly the wonderful person you are, because the world truly needs more
+      </p>
+      <p class="footer-wishes-author">- DD</p>
+      <p class="copyright">&copy; Crafted with DD's Love and care.🤍✨</p>
+    </div>
+  </footer>
+
+  <!-- CDN scripts for GSAP, ScrollTrigger, and Howler.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.min.js"></script>
+
+  <!-- Main Javascript Logic -->
+  <script src="app.js"></script>
+  <script src="hero3D.js"></script>
+</body>
+
+</html>
